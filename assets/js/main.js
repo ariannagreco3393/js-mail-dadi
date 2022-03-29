@@ -34,17 +34,20 @@ per il computer. Stabilire il vincitore, in base a chi
 fa il punteggio più alto.
 */
 const giocatore = Math.floor(Math.random() * 6) +1;
-console.log(giocatore);
+document.getElementById('giocatore').innerHTML += giocatore
+
 const computer = Math.floor(Math.random() * 6) +1;
-console.log(computer);
+document.getElementById('computer').innerHTML += computer
 
 
 if (giocatore > computer) {
-    alert("hai vinto");
+    document.getElementById("dadi").innerHTML = "hai vinto"
 } else  if (giocatore == computer){
-    alert("pari");   
+    document.getElementById("dadi").innerHTML = "pari"
 } else {
-    alert("hai perso");   
+    document.getElementById("dadi").innerHTML = "hai perso"
+   
 }
+
 
 
