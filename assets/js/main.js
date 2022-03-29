@@ -4,7 +4,7 @@ controlla che sia nella lista di chi può accedere,
 stampa un messaggio appropriato sull’esito del controllo.
 */
 
-/* //lista email
+ //lista email
 const emailVerified = ['pippo@gmail.com', 'pluto@gmail.com', 'topolino@gmail.com'];
 
 //chiedi all'utente la sua email
@@ -24,7 +24,7 @@ if (vero_falso == true) {
 } else {
     console.log("mail errata");    
 }
- */
+
 
 
 /* 
@@ -33,18 +33,18 @@ Generare un numero random da 1 a 6, sia per il giocatore sia
 per il computer. Stabilire il vincitore, in base a chi 
 fa il punteggio più alto.
 */
-const giocatore = Math.floor(Math.random() * (7 - 1)+1);
+const giocatore = Math.floor(Math.random() * 6) +1;
 console.log(giocatore);
-const computer = Math.floor(Math.random() * (7 - 1)+1);
+const computer = Math.floor(Math.random() * 6) +1;
 console.log(computer);
 
 
 if (giocatore > computer) {
-    console.log("hai vinto");
+    alert("hai vinto");
 } else  if (giocatore == computer){
-    console.log("pari");
+    alert("pari");   
 } else {
-    console.log("hai perso");
+    alert("hai perso");   
 }
 
 
